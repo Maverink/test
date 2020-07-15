@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>1. Longest Sequence</h1>
+      <form id="firstForm">
+        <input
+          id="firstInput"
+          type="text"
+          name="fname"
+          placeholder="Input sequence"
+        /><br />
+      </form>
+      <button
+        onclick="longestSequence(document.getElementById('firstInput').value)"
+      >
+        submit
+      </button>
+      <h4 id="firstOutput"></h4>
+    </div>
+
+    <div class="container">
+      <h1>2. Second Lowest Frequency</h1>
+      <form id="secondForm">
+        <input
+          id="secondInput"
+          type="text"
+          name="fname"
+          placeholder="enter numbers"
+        /><br />
+        (will be converted into an array)
+      </form>
+      <button
+        onclick="secondLowest(document.getElementById('secondInput').value)"
+      >
+        submit
+      </button>
+      <h4 id="secondOutput"></h4>
+    </div>
+
+    <div class="container">
+      <h1>3. Savings Account Balance</h1>
+      <form id="thirdForm">
+        <input
+          id="openingSumInput"
+          type="text"
+          name="fname"
+          placeholder="Input balance"
+          value="10000"
+        /><br />
+        <input
+          id="interestRateInput"
+          type="text"
+          name="fname"
+          placeholder="Input interest rate"
+          value="1"
+        /><br />
+        <input
+          id="taxFreeLimit"
+          type="text"
+          name="fname"
+          placeholder="Input tax free limit"
+          value="20000"
+        /><br />
+        <input
+          id="taxRateInput"
+          type="text"
+          name="fname"
+          placeholder="Input Tax rate"
+          value="1"
+        /><br />
+        <input
+          id="numMonthsInput"
+          type="text"
+          name="fname"
+          placeholder="Input num of months"
+          value="2"
+        /><br />
+      </form>
+      <button
+        onclick="balance(parseInt(document.getElementById('openingSumInput').value,10),
+      parseInt(document.getElementById('interestRateInput').value,10),
+      parseInt(document.getElementById('taxFreeLimit').value,10),
+      parseInt(document.getElementById('taxRateInput').value,10),
+      parseInt(document.getElementById('numMonthsInput').value),10)"
+      >
+        submit
+      </button>
+      <h4 id="thirdOutput"></h4>
+
+     
+
+      <div class="container">
+        <h1>4. Recursive Reverse String</h1>
+        <form id="forthForm">
+          <input
+            id="forthInput"
+            type="text"
+            name="fname"
+            placeholder="Input string to reverse"
+          /><br />
+        </form>
+        <button
+          onclick="reverseString(document.getElementById('forthInput').value)"
+        >
+          submit
+        </button>
+        <h4 id="forthOutput"></h4>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
